@@ -1,6 +1,7 @@
 # enviro-data
 
 _**Brief**_:
+
 Enviro-data is a personal data analysis project focused on environmental science and policy. The project uses a two-pronged approach: exploring high-level environmental concepts downward into the data, while simultaneously aggregating raw data to uncover bottom-up insights. The repository is organized into distinct, topic-focused modules containing data pipelines, visualizations, and written analyses.
 
 _**Lines of Inquiry**_:
