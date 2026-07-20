@@ -1,0 +1,4 @@
+Source:  Food and Agriculture Organization
+
+Permanent: https://data.un.org/Data.aspx?q=pasture&d=FAO&f=itemCode:6655;year:2021;elementCode:5110&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1
+Temporary: https://data.un.org/Data.aspx?q=pasture&d=FAO&f=itemCode%3a6633%3byear%3a2021&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1
