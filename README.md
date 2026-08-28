@@ -13,3 +13,7 @@ _**Lines of Inquiry**_:
 * **Technical (Personal)**: Learn about processing, cleaning, presenting and analysing data using Python.
 * **Impact**: Present otherwise difficult to interpret data in clear and interactive ways to raise awareness for environmental issues
 * **Professional**: Build a public portfolio demonstrating competence in data engineering, statistical analysis, and data storytelling.
+  
+  
+_A note on AI Use:_  
+_I have been exploring how I can integrate AI (specifically LLM) tools into my coding workflow using this project. While creating my work, I have used Claude for some structuring/source searching, and made use of Kiro while coding._
