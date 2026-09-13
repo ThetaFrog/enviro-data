@@ -1,6 +1,6 @@
 import csv
 import json
-import os
+from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -147,7 +147,8 @@ ALL_ISO3 = {**SIMPLE_ISO3, **MANUAL_ISO3}
 # ---------------------------------------------------------------------------
 # 2. Load processed data
 # ---------------------------------------------------------------------------
-DATA_PATH = "/Users/angad/Documents/Kiro Projects/enviro-data/Pasture Land/Processed Data/Pasture Land Percentages 2021.txt"
+HERE = Path(__file__).parent
+DATA_PATH = HERE / "Pasture Land Percentages 2021.txt"
 
 rows = []
 with open(DATA_PATH, encoding="utf-8") as f:
@@ -304,7 +305,7 @@ fig.update_layout(
 # ---------------------------------------------------------------------------
 # 6. Save
 # ---------------------------------------------------------------------------
-OUT_PATH = "/Users/angad/Documents/Kiro Projects/enviro-data/Pasture Land/Processed Data/pasture_map.html"
+OUT_PATH = HERE.parent / "pasture_map.html"
 fig.write_html(OUT_PATH, include_plotlyjs="cdn")
 print(f"Saved → {OUT_PATH}")
 print(f"Countries plotted: {len(df)}")
