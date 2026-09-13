@@ -209,7 +209,12 @@ for legend_label, data in sorted(groups.items()):
     ))
 
 fig.update_layout(
-    title="UK Renewable Energy and Storage Projects",
+    title=dict(
+        text=(
+            "UK Renewable Energy and Storage Projects<br>"
+            "<sup>Source: GOV.UK Renewable Energy Planning Database (REPD) - Jul 2026</sup>"
+        )  
+    ),
     map=dict(
         style="carto-positron",
         center=dict(lat=54.5, lon=-2.5),
