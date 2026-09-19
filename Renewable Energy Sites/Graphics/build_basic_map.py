@@ -8,9 +8,9 @@ from pyproj import Transformer
 
 #paths
 
-HERE = Path(__file__).parent
-DATA_PATH = HERE.parent / "Cleaned Data" / "Renewable Project Data Cleaned.csv"
-OUT_PATH  = HERE / "renewable_map.html"
+HERE = Path(__file__).parent.parent
+DATA_PATH = HERE / "Cleaned Data" / "Renewable Project Data Cleaned.csv"
+OUT_PATH  = HERE.parent / "Website" / "renewable_map.html"
 
 
 
