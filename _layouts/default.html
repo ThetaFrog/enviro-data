@@ -10,6 +10,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    <style>
+      /* Override minimal theme's sidebar layout → stacked top-to-bottom */
+      body {
+        padding-top: 2.8rem; /* offset for fixed nav bar */
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 1rem;
+      }
+      .wrapper header {
+        float: none;
+        width: auto;
+        position: static;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .wrapper header h1 { margin-bottom: 0.25rem; }
+      .wrapper section {
+        float: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper footer {
+        float: none;
+        width: auto;
+        position: static;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #ddd;
+        font-size: 0.8rem;
+        color: #666;
+        text-align: center;
+      }
+      /* Link colour to match nav bar */
+      a { color: #065c5e; }
+      a:hover { color: #033a3b; }
+    </style>
   </head>
   <body>
 
@@ -48,7 +91,7 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        
+
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
