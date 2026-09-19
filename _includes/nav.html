@@ -1,13 +1,13 @@
 <style>
   .site-nav {
-    background: #2c2c2c;
+    background: #065c5e;
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
     gap: 0.25rem;
     font-family: sans-serif;
     font-size: 0.9rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
@@ -18,7 +18,7 @@
     padding: 0.75rem 1rem;
     display: inline-block;
   }
-  .site-nav a.nav-home:hover { background: #444; }
+  .site-nav a.nav-home:hover { background: #456363; }
   .nav-dropdown { position: relative; }
   .nav-dropdown > .nav-btn {
     background: none;
@@ -33,14 +33,14 @@
     gap: 0.35rem;
   }
   .nav-dropdown > .nav-btn:hover,
-  .nav-dropdown:focus-within > .nav-btn { background: #444; }
+  .nav-dropdown:focus-within > .nav-btn { background: #456363; }
   .nav-dropdown > .nav-btn::after { content: "▾"; font-size: 0.75rem; }
   .nav-dropdown .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #2c2c2c;
+    background: #065c5e;
     min-width: 200px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     border-top: 2px solid #555;
@@ -54,7 +54,7 @@
     padding: 0.6rem 1rem;
     white-space: nowrap;
   }
-  .dropdown-menu a:hover { background: #444; }
+  .dropdown-menu a:hover { background: #456363; }
 </style>
 
 <nav class="site-nav">
