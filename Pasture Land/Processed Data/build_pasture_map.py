@@ -305,7 +305,7 @@ fig.update_layout(
 # ---------------------------------------------------------------------------
 # 6. Save
 # ---------------------------------------------------------------------------
-OUT_PATH = HERE.parent.parent / "Website" / "pasture_map.html"
+OUT_PATH = HERE.parent.parent / "visualisations" / "pasture_map.html"
 fig.write_html(OUT_PATH, include_plotlyjs="cdn")
 print(f"Saved → {OUT_PATH}")
 print(f"Countries plotted: {len(df)}")

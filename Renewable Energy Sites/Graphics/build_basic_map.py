@@ -10,7 +10,7 @@ from pyproj import Transformer
 
 HERE = Path(__file__).parent.parent
 DATA_PATH = HERE / "Cleaned Data" / "Renewable Project Data Cleaned.csv"
-OUT_PATH  = HERE.parent / "Website" / "renewable_map.html"
+OUT_PATH  = HERE.parent / "visualisations" / "renewable_map.html"
 
 
 
