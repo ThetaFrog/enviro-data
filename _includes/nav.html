@@ -1,0 +1,77 @@
+<style>
+  .site-nav {
+    background: #2c2c2c;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .site-nav a.nav-home {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: inline-block;
+  }
+  .site-nav a.nav-home:hover { background: #444; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-btn {
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nav-dropdown > .nav-btn:hover,
+  .nav-dropdown:focus-within > .nav-btn { background: #444; }
+  .nav-dropdown > .nav-btn::after { content: "▾"; font-size: 0.75rem; }
+  .nav-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #2c2c2c;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border-top: 2px solid #555;
+  }
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu { display: block; }
+  .dropdown-menu a {
+    display: block;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    white-space: nowrap;
+  }
+  .dropdown-menu a:hover { background: #444; }
+</style>
+
+<nav class="site-nav">
+  <a class="nav-home" href="{{ "/" | absolute_url }}">Home</a>
+
+  <div class="nav-dropdown">
+    <button class="nav-btn">Visualisations</button>
+    <div class="dropdown-menu">
+      <a href="{{ "/visualisations/pasture_map.html" | absolute_url }}">Pasture Land Map</a>
+      <a href="{{ "/visualisations/renewable_map.html" | absolute_url }}">Renewable Energy Map</a>
+    </div>
+  </div>
+
+  <div class="nav-dropdown">
+    <button class="nav-btn">Writeups</button>
+    <div class="dropdown-menu">
+      <a href="{{ "/writeups/pasture_blurb.html" | absolute_url }}">Pastureland: A Cautionary Tale</a>
+    </div>
+  </div>
+</nav>
